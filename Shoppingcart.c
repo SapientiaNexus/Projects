@@ -2,10 +2,10 @@
 int main()
 {
     char item[100];
-    char currency;
-    float price=0.0;
-    int quantity=0;
-    float total=0.0;
+    char currency[1];
+    float price;
+    int quantity;
+    float total;
 
     printf ("welcome to vintage valley's shopping cart\n");
     printf ("what item would you like to purchase? ");
@@ -19,7 +19,7 @@ int main()
     printf ("how many items would you like to purchase?");
     scanf ("%d", &quantity);
     total = price * quantity;
-    printf("You have prurchased %d %s at a cost of %.3f each\n", quantity, item, price);
+    printf("You have prurchased %d %s at a cost of %.3f each\n", quantity, item, price); 
     printf ("the total cost is:%.3f\n",total);
     
 
